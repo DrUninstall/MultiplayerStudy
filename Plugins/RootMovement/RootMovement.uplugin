@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "RootMovement",
+	"Description": "Expose root motion based movement to blueprints without needing Gameplay Ability System.",
+	"Category": "Other",
+	"CreatedBy": "Miguel Batalha",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "RootMovement",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
