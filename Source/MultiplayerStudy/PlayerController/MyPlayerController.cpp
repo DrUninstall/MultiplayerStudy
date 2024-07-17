@@ -90,3 +90,18 @@ void AMyPlayerController::SetHUDWeaponAmmo(int32 Ammo)
 		MyHUD->CharacterOverlay->WeaponAmmoAmount->SetText(FText::FromString(AmmoText));
 	}
 }
+
+void AMyPlayerController::SetHUDCarriedAmmo(int32 Ammo)
+{
+	MyHUD = MyHUD == nullptr ? Cast<AMyHUD>(GetHUD()) : MyHUD;
+
+	bool bHUDValid = MyHUD &&
+		MyHUD->CharacterOverlay &&
+		MyHUD->CharacterOverlay &&
+		MyHUD->CharacterOverlay->CarriedAmmoAmount;
+	if (bHUDValid)
+	{
+		FString AmmoText = FString::Printf(TEXT("%d"), Ammo);
+		MyHUD->CharacterOverlay->CarriedAmmoAmount->SetText(FText::FromString(AmmoText));
+	}
+}
